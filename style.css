@@ -1,0 +1,222 @@
+:root {
+
+  /*--main-gradient: linear-gradient(48deg, rgba(223,102,100,1) 15%, rgba(82,106,245,1) 100%);*/
+  --main-gradient: linear-gradient(255deg, #526AF6 17.5%, #B254B7 44.57%, #E06664 75.94%, #E06664 100%);
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+body{
+  /* background: rgb(223,102,100); */
+  background-color: #282828;
+}
+p{
+  text-indent: 1rem;
+  text-align: center;
+  width: 100%;
+}
+
+
+.container{
+  /* text-align: center; */
+  display: flex;
+  justify-content: center;
+}
+
+.main_container{
+  width: 70%;
+}
+
+.title{
+  color: #FFF;
+  text-align: center;
+  font-family: Manrope;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 112.012%; /* 53.766px */
+  margin-bottom: 0;
+}
+
+.title__highlight{
+  background: rgb(223,102,100);
+  background: radial-gradient(circle, rgba(223,102,100,1) 15%, rgba(82,106,245,1) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 112.012%;
+}
+
+.subtitle{
+  color: rgba(255, 255, 255, 0.56);
+  text-align: center;
+  font-family: Manrope;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 112.012%; /* 22.402px */
+}
+
+.cards{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card{
+  border: 3px solid rgba(0, 0, 0, 0.23);
+  border-radius: 23px;
+  display: flex;
+  /* width: calc(50% - 60px); */
+  min-width: 300px;
+  width: 350px;
+  margin: 25px;
+  text-decoration: none;
+}
+
+.link_card{
+  display: block;
+  text-decoration: none;
+}
+
+.card__title{
+  color: white;
+  margin: 25px;
+  width: 75%;
+  /* text-wrap: wrap; */
+  font-family: Manrope;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 28.8px */
+  margin-right: 0;
+}
+
+.card__price{
+  margin: 25px;
+  margin-left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  font-family: Manrope;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 48px */
+  background: var(--main-gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.tg_link_container{
+  text-align: center;
+  margin-bottom: 75px;
+}
+
+.tg_link_discription{
+  margin-bottom: 0;
+  /* margin-top: 75px; */
+}
+
+.tg_link{
+  text-decoration: none;
+  font-family: Manrope;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 76.8px */
+  background: rgb(223,102,100);
+  background: var(--main-gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 1190px){
+  .card{
+    width: 90%;
+  }
+}
+
+/* Add this at the end of the style.css file */
+@media screen and (max-width: 1000px) {
+  .main_container{
+    width: 90%;
+  }
+  .title {
+    font-size: 64px;
+  }
+  .title__highlight {
+      font-size: 64px;
+  }
+  .subtitle {
+    font-size: 36px;
+  }
+  .card__title {
+    font-size: 36px;
+  }
+  .card__price {
+    font-size: 56px;
+  }
+  .tg_link {
+    font-size: 48px;
+  }
+}
+
+.buy_line{
+  /* border: 3px solid rgba(0, 0, 0, 0.23); */
+  border-radius: 23px;
+  display: flex;
+  /* width: calc(50% - 60px); */
+  width: auto;
+  margin: 25px;
+  text-decoration: none;
+  padding: 30px 50px;
+  align-items: center;
+  /* justify-content: flex-end; */
+}
+
+.buy_btn{
+  background: var(--main-gradient);
+  border: none;
+  height: auto;
+  width: 100%;
+  color: white;
+  font-family: Manrope;
+  border-radius: 23px;
+  /* margin: 25px; */
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 28.8px */
+  margin-right: 0;
+  padding: 10px 40px;
+}
+
+.buy_container_icon{
+  height: 30px;
+}
+
+.cost{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  margin-left: 30px;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  width: auto;
+}
+
+.disciption{
+  width: 100%;
+}
